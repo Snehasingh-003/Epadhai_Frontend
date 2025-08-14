@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Become a Contributor</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"/>
+
+  <!-- Styles -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto Slab', serif;
+      
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      /* background: rgba(0, 0, 0, 0.6); */
+      z-index: 1;
+    }
+
+    .contributor-section {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: 100px auto;
+      background: linear-gradient(to right, #e6f4ec 50%, #ffffff 100%);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      padding: 40px;
+      text-align: center;
+    }
+
+    .contributor-section h2 {
+      color: #2e8b57;
+      margin-bottom: 10px;
+    }
+
+    .contributor-section p {
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    label {
+      font-weight: bold;
+      color: #2e8b57;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="file"],
+    input[type="url"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #2e8b57;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #246d46;
+    }
+
+    @media (max-width: 768px) {
+      .contributor-section {
+        margin: 50px 20px;
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overlay"></div>
+
+  <div class="contributor-section">
+    <h2>Become A Contributor</h2>
+    <p>Help thousands of students by uploading your handmade notes (PDF) or sharing links to free eBooks.</p>
+    
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="pdf-upload">Upload Handmade Notes (PDF)</label>
+        <input type="file" id="pdf-upload" name="notes" accept=".pdf">
+      </div>
+
+      <div class="form-group">
+        <label for="ebook-link">Share eBook Link</label>
+        <input type="url" id="ebook-link" name="ebook" placeholder="https://example.com/free-ebook">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Additional Message (Optional)</label>
+        <textarea id="message" name="message" rows="4" placeholder="Any message for students..."></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

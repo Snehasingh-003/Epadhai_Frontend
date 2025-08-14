@@ -1,0 +1,492 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: #e6f4ec;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4CAF50;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    /* border: 2px solid red; */
+    background-image: url("https://cdn.theatlantic.com/thumbor/XweKwMpV0Plj3BM2jj3MrkyhZRY=/126x0:1794x938/1440x810/media/img/2014/07/14/opener_v02-2/original.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-blend-mode: lighten;
+     background-color: rgba(255, 255, 255, 0.6);
+   
+}
+.hero-content{
+    /* border: 2px solid red; */
+     animation: slideUp 1s ease-out forwards;
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #45a049;
+}
+
+.secondary-btn {
+    background-color: #ccc;
+    color: black;
+}
+
+.secondary-btn:hover {
+    background-color: #bbb;
+}
+
+/* ===== Courses Section ===== */
+.courses {
+    padding: 50px 20px;
+    background: #fff;
+    /* border: 2px solid pink; */
+}
+
+.courses h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.course-card {
+    background: #e6f4ec;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.course-card:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Quizzes, About, Contact ===== */
+
+.quizzes, .about, .contact {
+    padding: 50px 20px;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+
+.quizzes {
+    /* border: 2px solid green; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-container {
+    /* border: 2px solid black; */
+    /* background: #e6f4ec; */
+
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Container for the 3 boxes */
+.quiz-levels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 100px;
+
+}
+
+/* Each level box */
+.level-box {
+    flex: 1;
+    border: 2px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.level-box:hover{
+    box-shadow: 0 2px 5px  green;
+}
+
+/* Heading above buttons */
+.level-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.level-box ul{
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+    list-style: none;
+}
+
+/* Buttons */
+.level-box button {
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.level-box button:hover {
+    background-color: darkgrey;
+}
+
+
+/* ===== placed std ===== */
+
+.placed{
+  margin-left:3rem;
+  margin-right:3rem;
+  width:80rem;
+  height:35rem;
+}
+.head-text{
+  width:70rem;
+  margin:3rem 3rem 3rem 8rem;
+}
+.head-text h3{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logos{
+  width:70rem;
+  height:10rem;
+  display:flex;
+  margin-left:8rem;
+}
+.l{
+  width:15rem;
+  height:7rem;
+}
+.l img{
+  margin-top:2rem;
+  margin-left:4rem;
+  width:7rem;
+  height:5rem;
+  opacity:1;
+}
+.l img:hover{
+  opacity:0.4;
+}
+
+/* ===== about us ===== */
+/* ===== About Us Section ===== */
+.about-section {
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Intro */
+.about-hero {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.about-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+.about-hero h1 span {
+    color: #2e8b57;
+}
+.about-hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Mission & Vision Cards */
+.about-mission {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+.mission-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    flex: 1 1 300px;
+    transition: transform 0.3s ease;
+}
+.mission-card:hover {
+    transform: translateY(-5px);
+}
+.mission-card h2 {
+    color: #2e8b57;
+    margin-bottom: 1rem;
+}
+.mission-card p {
+    color: #666;
+}
+
+/* Team Section */
+.about-team {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+.team-member {
+    text-align: center;
+    max-width: 250px;
+}
+.team-member img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #2e8b57;
+    transition: transform 0.3s ease;
+}
+.team-member img:hover {
+    transform: scale(1.05);
+}
+.team-member h3 {
+    margin-top: 1rem;
+    color: #222;
+}
+.team-member p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Story Section */
+.about-story {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+.about-story h2 {
+    color: #2e8b57;
+    margin-bottom: 1rem;
+}
+.about-story p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+
+
+
+/* ===== Contact Form ===== */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ===== last page===== */
+
+.last-page{
+  display:flex;
+  margin-top:5rem;
+  /* border:4px solid red; */
+
+}
+.dabba1{
+  margin-left:150px;
+  /* border:2px solid red; */
+  list-style: none;
+  
+}
+.dabba1 li:hover{
+  opacity:0.5;
+}
+.dabba2{
+  /* border:2px solid red; */
+  list-style:none;
+  margin-left:90px;
+}
+.dabba2 li:hover{
+  opacity:0.5;
+}
+.dabba3 img{
+  padding-top:5px;
+  padding-bottom:5px;
+  width:140px;
+  height:130px;
+}
+.dabba3 img:hover{
+  opacity:0.5;
+}
+.dabba3{
+  margin-left:90px;
+}
+.fa-twitter{
+  margin-right:10px;
+}
+.fa-twitter:hover{
+  opacity:0.5;
+}
+.fa-youtube{
+  margin-right:10px;
+}
+.fa-youtube:hover{
+  opacity:0.5;
+}
+.fa-instagram{
+  margin-right:10px;
+}
+.fa-instagram:hover{
+  opacity:0.5;
+}
+.dabba4{
+  margin-left:90px;
+}
+.dabba4:hover{
+  opacity:0.5;
+}
+
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #e6f4ec;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* ===== Responsive Navbar ===== */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #e6f4ec;
+        flex-direction: column;
+        width: 200px;
+        display: none;
+        padding: 10px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        padding: 10px 0;
+    }
+}

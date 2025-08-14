@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Front Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #e6f4ec 50%, #ffffff 100%);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .container {
+      background-color: white;
+      padding: 2rem;
+      color: black;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      color: black;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      color: black;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      color: white;
+      background: #2e8b57;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .instructions {
+      margin-top: 2rem;
+      background-color: #f7f7f7;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: left;
+      color: #333;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .instructions h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #2e8b57;
+    }
+
+    .instructions ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .instructions li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Quiz!</h1>
+    <p>Test your knowledge and challenge yourself with our exciting quiz.</p>
+
+    <div class="btn-container">
+      <button class="btn">Start Quiz</button>
+      <!-- <button class="btn">View Scores</button> -->
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions:</h2>
+      <ul>
+        <li>You have a total of 5 minutes for all questions.</li>
+        <li>The quiz consists of 5 coding questions.</li>
+        <li>Questions are designed to test your problem-solving skills and coding proficiency.</li>
+        <li>Each question will specify the requirements and constraints.</li>
+        <li>If you encounter any technical issues, notify the proctor immediately.</li>
+        <li>Technical support is available for the first 10 minutes of the quiz.</li>
+        <li>Submit your final solutions before the timer expires.</li>
+        <li>Double-check your answers and ensure all required fields are completed.</li>
+        <li>Good Luck, and Happy Coding!</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <p>Created by Sneha Singh</p>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+    let btn=document.querySelector('.btn');
+    btn.addEventListener("click",function Redirect(){
+    // alert("are you sure you want to start?");
+    window.location.href="quiz.html";
+ })
+});
+
+</script>
+</body>
+</html>
